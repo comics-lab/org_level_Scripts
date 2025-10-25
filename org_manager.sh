@@ -8,7 +8,7 @@ set -euo pipefail
 # Configuration
 PROJECT_ROOT="/home/rmleonard/projects/Home Projects"
 DEFAULT_CLONE_DIR="./"
-CONFIG_FILE="${HOME}/.config/org_manager.conf"
+CONFIG_FILE="${HOME}/.config/my_git.conf"
 REPOS=()
 
 # Load custom configuration if exists
