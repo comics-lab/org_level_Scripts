@@ -14,7 +14,8 @@ REPOS=()
 # Load custom configuration if exists
 load_config() {
     if [[ -f "$CONFIG_FILE" ]]; then
-        source "$CONFIG_FILE"
+        # source "$CONFIG_FILE"
+        echo "not using config file"
     fi
 }
 
