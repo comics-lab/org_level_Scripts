@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ORG_NAME="$1"
+CLONE_DIR="./$ORG_NAME" # Directory to clone repos into
+
+mkdir -p "$CLONE_DIR"
+cd "$CLONE_DIR"
+
+# Get a list of all repository names in the organization
+gh repo list \
+  "$ORG_NAME" \
+  --limit 999
+  --json name --jq '.[].name' |\
+while read -r repo_name
+  do
+    echo "Cloning $ORG_NAME/$repo_name..."
+    gh repo clone "$ORG_NAME/$repo_name"
+  done
+
+echo "All repositories from $ORG_NAME cloned into $CLONE_DIR"
