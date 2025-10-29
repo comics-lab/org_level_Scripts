@@ -2,6 +2,12 @@
 
 This README captures the conversation between the user and the assistant about issues in the `git_pull.sh` and `git_push.sh` scripts, describing the problem, diagnosis, changes made, and testing notes.
 
+Documentation pointers
+
+- Central docs index: `../docs/DOCUMENTATION_INDEX.md`
+- Conversation snapshot (docs): `../docs/conversations/org_level_Scripts.md`
+
+
 Date: 2025-10-23
 
 ---
