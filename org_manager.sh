@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # Configuration
-PROJECT_ROOT="/home/rmleonard/projects/Home Projects"
+PROJECT_ROOT="/home/rmleonard/Projects"
 DEFAULT_CLONE_DIR="./"
 CONFIG_FILE="${HOME}/.config/my_git.conf"
 REPOS=()
